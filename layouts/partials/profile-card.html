@@ -7,16 +7,33 @@
         <h2>{{ .Site.Params.author }}</h2>
     </div>
     <div class="profile-description">
+        {{ if or .Site.Params.position .Site.Params.research_interests }}
+        {{ with .Site.Params.position }}
+        <p class="profile-position">{{ . }}</p>
+        {{ end }}
+        {{ with .Site.Params.research_interests }}
+        <p class="profile-interests">{{ . }}</p>
+        {{ end }}
+        {{ else }}
         <p>{{ .Site.Params.description | markdownify }}</p>
+        {{ end }}
     </div>
+    {{ with .Site.Params.location }}
+    <div class="profile-location">
+        <i class="fas fa-location-dot" aria-hidden="true"></i>
+        <span>{{ . }}</span>
+    </div>
+    {{ end }}
+    {{ with .Site.Params.motto }}
     <div class="profile-quote">
-        <p>{{ .Site.Params.motto | markdownify }}</p>
+        <p>{{ . | markdownify }}</p>
     </div>
+    {{ end }}
     <div class="social-links">
         {{ range .Site.Params.social }}
-        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="social-icon">
-            <i class="{{ .icon }}"></i>
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="{{ .name }}" title="{{ .name }}">
+            <i class="{{ .icon }}" aria-hidden="true"></i>
         </a>
         {{ end }}
     </div>
-</div> 
+</div>

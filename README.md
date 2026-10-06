@@ -1,27 +1,30 @@
-<h1 align="center">
-Zero Academic Homepage
-</h1>
-<div align="center">
+# Lingyi Meng's Academic Homepage
 
-[![](https://img.shields.io/github/stars/geekifan/zero-academic-page)](https://github.com/geekifan/zero-academic-page)
-[![](https://img.shields.io/github/forks/geekifan/zero-academic-page)](https://github.com/geekifan/zero-academic-page)
-[![](https://img.shields.io/github/license/geekifan/zero-academic-page)](https://github.com/geekifan/zero-academic-page/blob/main/LICENSE)  | [Demo](https://geekifan.github.io/zero-academic-page-starter/) 
-</div>
+Personal academic homepage built with [Hugo](https://gohugo.io/) and based on the [Zero Academic Page](https://github.com/geekifan/zero-academic-page) theme.
 
-![](demo.png)
+## Local development
 
-Zero Academic Homepage is a clean, modern and responsive theme for academic personal websites built with Hugo. It provides a simple yet elegant way for researchers, professors and students to showcase their academic achievements and professional experience.
+Install Hugo Extended, then run the following command from the repository root:
 
+```bash
+hugo server --source exampleSite --disableFastRender
+```
 
-## Features
+Open <http://localhost:1313/> in a browser. Hugo watches the source files and refreshes the site when they change.
 
-- 🎨 Clean and modern design
-- 🌓 Light/Dark mode support  
-- 🌐 Multi-language support
-- 📱 Fully responsive layout
-- 🔍 SEO friendly
-- 🔗 Social media links (GitHub, Google Scholar, Email, LinkedIn, Zhihu etc.)
+To create a production build locally:
 
-## Quick Start
+```bash
+hugo --source exampleSite --minify --gc
+```
 
-Use this template: [geekifan/zero-academic-page-starter](https://github.com/geekifan/zero-academic-page-starter)
+The generated website will be written to `exampleSite/public/`.
+
+## Content locations
+
+- English homepage: `exampleSite/content/_index.md`
+- English name, sidebar summary, and navigation: `exampleSite/config/_default/languages.toml`
+- Shared profile image and social links: `exampleSite/config/_default/params.toml`
+- Profile image file: `exampleSite/assets/images/profile.png`
+
+Pushing to `main` triggers the GitHub Actions workflow that builds the Hugo site and publishes it to the `gh-pages` branch.

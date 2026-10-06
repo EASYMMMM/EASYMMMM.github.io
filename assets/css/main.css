@@ -383,6 +383,30 @@ header {
     margin-bottom: 5px;
 }
 
+.profile-description p {
+    margin: 0;
+}
+
+.profile-position,
+.profile-interests {
+    white-space: nowrap;
+}
+
+.profile-interests {
+    margin-top: 2px !important;
+    font-size: 13px;
+}
+
+.profile-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: var(--text-color-light);
+    font-size: 14px;
+    margin: 10px 0 18px;
+}
+
 .profile-quote {
     font-size: 0.875rem;
     font-style: italic;

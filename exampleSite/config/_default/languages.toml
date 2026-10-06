@@ -1,12 +1,13 @@
 [en]
 languageName = 'English'
 weight = 1
-title = 'Zero'
+title = 'Lingyi Meng'
 
 [en.params]
-    author = "Lorem ipsum"
-    description = "Ph.D Student in [Lorem ipsum College](https://example.com). Focusing on Computer Vision and Deep Learning."
-    motto = "Most things in the world are not that important. But truth and love matter."
+    author = "Lingyi Meng"
+    description = "Ph.D. student at Nanyang Technological University with research interests in human-robot interaction and robot learning."
+    position = "Ph.D. Student at NTU"
+    research_interests = "Human-Robot Interaction · Robot Learning"
 
 [[en.menu.main]]
     name = 'About Me'
@@ -25,17 +26,9 @@ title = 'Zero'
     url = '#honors-and-awards'
     weight = 4
 [[en.menu.main]]
-    name = 'Educations'
-    url = '#educations'
+    name = 'Education'
+    url = '#education'
     weight = 5
-[[en.menu.main]]
-    name = 'Invited Talks'
-    url = '#invited-talks'
-    weight = 6
-[[en.menu.main]]
-    name = 'Internships'
-    url = '#internships'
-    weight = 7
     
 [zh]
 languageName = '中文'

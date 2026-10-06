@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme-toggle-btn');
     const body = document.body;
     
-    // check user's theme preference
+    // Use dark mode by default while preserving an explicit user preference.
     const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'dark') {
-        body.classList.add('dark-mode');
-        body.classList.remove('light-mode');
-    } else {
+    if (storedTheme === 'light') {
         body.classList.add('light-mode');
         body.classList.remove('dark-mode');
+    } else {
+        body.classList.add('dark-mode');
+        body.classList.remove('light-mode');
     }
     
     // toggle theme button event

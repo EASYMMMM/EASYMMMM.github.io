@@ -1,30 +1,21 @@
-profilePicture = "images/profile.png"
+profilePicture = "images/profile_mly.jpeg"
 enableDarkMode = true
+location = "Singapore"
 
 # Google Analytics ID, leave empty if you don't want to use Google Analytics
 googleAnalyticsID = ""
 
 [[social]]
-name = "github"
-url = "https://github.com/"
-icon = "fab fa-github"
-
-[[social]]
-name = "google-scholar"
-url = "https://scholar.google.com/"
+name = "Google Scholar"
+url = "https://scholar.google.com/citations?user=0T4Pkv8AAAAJ"
 icon = "fab fa-google-scholar"
 
 [[social]]
-name = "email"
-url = "mailto:example@example.com"
+name = "Email"
+url = "mailto:meng0109@e.ntu.edu.sg"
 icon = "fas fa-envelope"
 
 [[social]]
-name = "linkedin"
-url = "https://linkedin.com/"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/lingyi-meng-096788373/"
 icon = "fab fa-linkedin"
-
-[[social]]
-name = "zhihu"
-url = "https://zhihu.com/"
-icon = "fab fa-zhihu"
