@@ -1,4 +1,5 @@
 profilePicture = "images/profile_mly.jpeg"
+favicon = "favicon.svg"
 enableDarkMode = true
 location = "Singapore"
 

@@ -115,11 +115,11 @@ header {
 
 .navbar .navbar-start,.navbar-end,.navbar-center {
     display: flex;
-    flex: 1;
     align-items: center
 }
 
 .navbar .navbar-start {
+    flex: 1;
     font-size: 1.25rem;
     color: var(--text-color);
 }
@@ -153,11 +153,15 @@ header {
 }
 
 .navbar .navbar-center {
-    justify-content: center;
+    flex: 0 1 auto;
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
 .navbar .navbar-end {
-    justify-content: end;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    margin-left: .5rem;
 }
 /* end of navbar */
 

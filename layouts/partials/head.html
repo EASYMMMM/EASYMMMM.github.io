@@ -29,7 +29,7 @@
     <link rel="canonical" href="{{ .Permalink }}">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ .Site.Params.favicon | default "/favicon.ico" | relURL }}">
+    <link rel="icon" href="{{ .Site.Params.favicon | default "favicon.ico" | relURL }}">
     
     {{ $styles := resources.Get "css/main.css" | minify }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Green leaf">
+  <path
+    d="M11 51C14 24 31 9 56 8c-1 25-14 43-39 45-2 0-4-1-6-2Z"
+    fill="#4caf50"
+  />
+  <path
+    d="M12 53c10-16 23-28 39-39M25 39l-1-12M34 31l11 1"
+    fill="none"
+    stroke="#d8f3dc"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="3"
+  />
+</svg>
